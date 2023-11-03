@@ -1,0 +1,180 @@
+body {
+  margin: 20px;
+  padding: 0px;
+  background-color:rgb(41, 207, 225);
+}
+
+ol, 
+ul {
+  list-style:none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+header {
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0em;
+  padding: 12px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2em;
+  font-size: 15px;
+  margin: 0em;
+  padding: 0em;
+}
+ 
+header h1 {
+  font-family: 'Yesteryear', cursive;  
+  font-size: 60px;
+  font-weight: 1;    
+  margin: 0px;
+}
+
+#check{
+  display: none
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+
+footer nav ul li a {
+  color: white  
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8em;
+  font-size: 30px;
+  margin: 4em;
+  padding: 3em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+main section div {  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+}
+
+main section div p {
+  font-size: 40px;  
+  width: 450px;
+  margin: 0px;
+  text-align: right;
+}
+
+main section div p1 {
+  font-size: 50px;  
+  width: 500px;
+  margin: 0px;
+}
+
+main section div img{
+  z-index:1;
+  width: 8%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px;
+  position: fixed;
+  top: 640px;
+}
+
+main section img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 13em;
+}
+
+@media (max-width: 768px) {
+
+  container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .checkbtn {
+    display: flex;
+  }
+
+  .navbar {
+  
+    height: 0vh;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    overflow: hidden;
+    line-height: 60px;
+  }
+    
+    .navbar ul.menu {
+      float: none;
+      display: block;
+      width: 174px;
+      margin: 0 auto;
+      opacity: 0;
+      padding: 1em;
+    }
+  
+    .navbar ul.menu li a:hover {
+      color: rgb(160, 26, 26);
+    }
+    .navbar.active {
+      height: 100vh;
+    }
+  
+    .navbar.active ul.menu {
+      opacity: 1;
+    }
+
+  main section div p {
+    font-size: 40px;  
+    width: 450px;
+    margin: 0px;
+    text-align: center;
+  }  
+
+  main section div p1{
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 100%;
+  }
+  container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
